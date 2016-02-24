@@ -28,13 +28,13 @@ before_script:
 
 # Running the tests with grunt
 script:
-  - grunt TY
+  - grunt
   #- echo "$TEST"
   #- echo "$SHIP"
 
 # Tell istanbul to generate a coverage report
 after_script:
-  - ./node_modules/.bin/istanbul cover grunt -- -u tdd
+  - ./node_modules/.bin/istanbul cover grunt -- -u tddytyb
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
 
 archive: true  
