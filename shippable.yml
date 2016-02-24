@@ -14,7 +14,7 @@ env:
 
 install:
   - node --version
-  - npm install kki
+  - npm install
 #  - . installMongo.sh
 #  - cat /etc/mongod.conf
 #  - sudo mongod --smallfiles &
@@ -37,5 +37,4 @@ after_script:
   - ./node_modules/.bin/istanbul cover grunt -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
 
-archive: true  
-   
+archive: true
