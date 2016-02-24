@@ -14,7 +14,7 @@ env:
 
 install:
   - node --version
-  - npm install
+  - npm install st
 #  - . installMongo.sh
 #  - cat /etc/mongod.conf
 #  - sudo mongod --smallfiles &
@@ -27,8 +27,8 @@ before_script:
   - mkdir -p shippable/codecoverage
 
 # Running the tests with grunt
-#script:
- # - grunt
+script:
+  - grunt
   #- echo "$TEST"
   #- echo "$SHIP"
 
