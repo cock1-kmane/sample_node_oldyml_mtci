@@ -28,7 +28,7 @@ before_script:
 
 # Running the tests with grunt
 script:
-  - grunt
+  - grunt TY
   #- echo "$TEST"
   #- echo "$SHIP"
 
