@@ -14,7 +14,7 @@ env:
 
 install:
   - node --version
-  - npm install
+  - npm install kki
 #  - . installMongo.sh
 #  - cat /etc/mongod.conf
 #  - sudo mongod --smallfiles &
@@ -28,7 +28,7 @@ before_script:
 
 # Running the tests with grunt
 script:
-  - grunt ved
+  - grunt
   #- echo "$TEST"
   #- echo "$SHIP"
 
