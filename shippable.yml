@@ -6,11 +6,12 @@ build_image: drydock/u14nodpls:prod
 # Version number
 node_js:
   - 0.11
-  #- 0.10.25
+  - 0.10.25
 
 # The path for Xunit to output test reports
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
+  - secure: ZlE2Jik/X89RjsCtbMXaO/dWKzCoLtPj/Gl8Xt3DBHPPf/fHLWOBT8nDcWhBXGocdK4QM1mx8p2xmzuVz8doxvzXJH3PMLBEl5U7ZiZtTBKtGa94xjMadcmeaOmsLlQrwzxHtLaHqP9Q0CiwXvIekhtByYz2RIkxzgGhAzzT745ys00QJEOPAzR3yzaexqCuh7aYdobqPeQ/bGrWwipEfAI3vGT/2OMd/JBhbI8B7Xe9Sz/qdofBFyyPa8e3AErxX7NK/0l5rk9EU83ksDw+snzmWhSKUVsacI7kFvAukyMfNQyHxiB+7CfcyEvb2Y8CCbNdvs0+YXs5Q5fvqX1MYw==
 
 install:
   - node --version
@@ -29,6 +30,7 @@ before_script:
 # Running the tests with grunt
 script:
   - grunt
+  - echo "$SHIP"
 
 # Tell istanbul to generate a coverage report
 after_script:
