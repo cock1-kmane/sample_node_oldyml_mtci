@@ -23,7 +23,7 @@ install:
 
 # Create directories for test and coverage reports
 before_script:
-  - mkdir -p shippable/testresults test122!@
+  - mkdir -p shippable/testresults 
   - mkdir -p shippable/codecoverage
 
 # Running the tests with grunt
